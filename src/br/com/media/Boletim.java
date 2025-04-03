@@ -8,8 +8,17 @@ public class Boletim {
         for (int i = 0; i < notas.length; i++) {
             media += this.notas[i];
         }
-        return media;
+        return media / this.notas.length;
+    }
+    public int getlength(){
+        return this.notas.length;
     }
 
+    public double getNota(int indice) {
+        return this.notas[indice];
+    }
 
+    public void setNota(double nota, int indice) {
+        this.notas[indice] = nota;
+    }
 }
